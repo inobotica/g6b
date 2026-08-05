@@ -77,7 +77,7 @@ Para no enamorarnos prematuramente de la solución, investigaremos el problema c
 
 ## 3.3 Problema que creemos observar
 
-> [Completar entre todos]
+> **Las personas que realizan seguimiento de problemas respiratorios en casa (y sus cuidadores) enfrentan altos niveles de ansiedad, cometen errores frecuentes en la técnica de medición con el oxímetro (manos frías, movimiento, falta de tiempo de estabilización) y carecen de criterio para interpretar lecturas aisladas. Esto genera falsas alarmas, traslados innecesarios a urgencias o, por el contrario, demoras en la búsqueda de atención médica oportuna ante una hipoxemia silente.**
 
 **Ejemplo orientador:**
 
@@ -85,12 +85,12 @@ Para no enamorarnos prematuramente de la solución, investigaremos el problema c
 
 ## 3.4 Lo que todavía no sabemos
 
-- [Ejemplo] No sabemos si el mayor problema es medir, interpretar o comunicar.
-- [Ejemplo] No sabemos quién debería recibir una alerta.
-- [Ejemplo] No sabemos qué tan frecuente es la desconfianza frente a una medición aislada.
-- [Ejemplo] No sabemos si las personas aceptarían un sensor de uso continuo.
-- [Ejemplo] No sabemos la disponibilidad de internet y electricidad del paciente.
-- [Ejemplo] No sabemos la accesibilidad al lugar donde habita el paciente.
+- No sabemos si el mayor problema es la mala técnica al medir, la falta de contexto para interpretar o la dificultad para comunicar el resultado.
+- No sabemos quién debería recibir una alerta crítica en primera instancia (el paciente, el cuidador familiar o el servicio de enfermería/médico).
+- No sabemos qué tan frecuente es la desconfianza frente a una medición aislada vs. la tendencia en el tiempo.
+- No sabemos si las personas aceptarían la guía por voz/pantalla de un asistente interactivo en un momento de disnea o angustia.
+- No sabemos la disponibilidad de internet y electricidad continua en los hogares de los pacientes monitoreados.
+- No sabemos qué nivel de autonomía aceptan los profesionales de la salud delegar en un sistema inteligente.
 
 ---
 
@@ -103,8 +103,9 @@ Antes de entrevistar u observar, registremos lo que creemos. Después podremos m
 | Las personas repiten una medición cuando el valor parece extraño. | Experiencias cercanas o intuición. | Preguntar por situaciones reales de uso de oxímetro. | Pendiente |
 | Los cuidadores sienten incertidumbre al decidir si esperar o pedir ayuda. | Conversaciones informales. | Entrevista a familiares o cuidadores. | Pendiente |
 | Los profesionales prefieren tendencias y contexto, no solo un valor aislado. | Conocimiento preliminar. | Entrevista a profesional o estudiante avanzado de salud. | Pendiente |
-| [Por completar] | [Por completar] | [Por completar] | Pendiente |
-| [Por completar] | [Por completar] | [Por completar] | Pendiente |
+| La mayoría de lecturas erróneas se deben a factores técnicos del paciente (movimiento, frío, esmalte). | Observación de proveedores de sistemas médicos. | Consulta sobre errores más frecuentes en monitoreo en casa.  | Confirmado |
+| Las alertas sonoras tipo alarma generan taquicardia y aumentan la ansiedad del paciente. | Experiencia de personal de atención domiciliaria. | Preguntas sobre la reacción emocional ante alarmas. | Confirmado | 
+
 
 ---
 
@@ -123,12 +124,10 @@ No necesitamos estudiar todo el sistema de salud. Para este taller debemos elegi
 ## 5.2 Actores complementarios
 
 Podemos incluir, según el acceso real del grupo:
-
-- familiares o cuidadores;
-- estudiantes de Medicina, Enfermería o Terapia Respiratoria;
-- profesionales de salud conocidos;
-- personas con experiencia en atención domiciliaria;
-- personas con experiencia en IoT o monitoreo remoto.
+- Cuidados familiares directos.
+- Enfermeros de atención médica domiciliaria y monitoreo remoto.
+- Proveedores o coordinadores de sistemas de atención y seguimiento médico domiciliario.
+- Estudiantes avanzados o profesionales de Medicina, Terapia Respiratoria y Enfermería.
 
 > El apoyo de la Facultad de Medicina sería valioso, pero no debe convertirse en una dependencia para completar el taller.
 
@@ -136,11 +135,7 @@ Podemos incluir, según el acceso real del grupo:
 
 ¿Por qué es relevante y accesible para nosotros?
 
-> [Por completar]
-
-**Ejemplo:**
-
-> Seleccionamos este segmento porque puede compartir experiencias reales de medición y toma de decisiones en casa, y porque el grupo tiene acceso razonable a participantes sin intervenir en tratamientos ni recolectar información clínica sensible.
+Seleccionamos este segmento porque vivencia de primera mano las frustraciones, ansiedades y barreras técnicas del monitoreo en casa. Además, el grupo cuenta con acceso directo a proveedores de monitoreo domiciliario, enfermeros y cuidadores, lo que permite recopilar vivencias reales sobre el proceso de toma de decisiones sin intervenir en tratamientos médicos reales ni vulnerar privacidad clínica sensible.
 
 ---
 
@@ -152,25 +147,25 @@ Podemos incluir, según el acceso real del grupo:
 |---|---|---|
 | Paciente o persona monitoreada | Percibe síntomas, realiza o recibe mediciones y decide si pedir ayuda. | Comprender la información y saber qué hacer. |
 | Familiar o cuidador | Observa, acompaña, mide, interpreta o contacta a alguien. | Alertas claras y orientación oportuna. |
-| Profesional o estudiante de salud | Interpreta información y orienta decisiones. | Datos confiables, contexto y comunicación clara. |
-| [Otro actor] | [Por completar] | [Por completar] |
+| Profesional / Enfermero domiciliario | Recibe llamadas de pánico o datos dispersos, evalúa el estado del paciente y filtra derivaciones. | Datos confiables, contexto y comunicación clara. |
+| Proveedor de monitoreo médico | Coordina personal de enfermería, gestiona equipos médicos en casa y busca reducir falsos ingresos a urgencias. | Datos validados en origen, reducción de falsas alarmas y adherencia del paciente al protocolo. |
 
 ## 6.2 Relación entre actores
 
-- ¿Quién realiza normalmente la medición?  
-  > [Por completar]
+¿Quién realiza normalmente la medición?
+ - El paciente bajo supervisión del cuidador familiar, o el enfermero en visitas de rutina.
 
-- ¿Quién interpreta el resultado?  
-  > [Por completar]
+¿Quién interpreta el resultado?
+ - Inicialmente el paciente/cuidador de forma empírica; posteriormente el enfermero o médico mediante llamada o visita.
 
-- ¿Quién toma la decisión de pedir ayuda?  
-  > [Por completar]
+¿Quién toma la decisión de pedir ayuda?
+ - El cuidador familiar o el propio paciente motivados por la ansiedad o por una lectura inusualmente baja.
 
-- ¿Quién recibe la información?  
-  > [Por completar]
+¿Quién recibe la información?
+ - La central de monitoreo, el enfermero a cargo del caso o la línea de emergencias.
 
-- ¿Qué ocurre si ninguna persona está disponible?  
-  > [Por completar]
+¿Qué ocurre si ninguna persona está disponible?
+ - El paciente/cuidador cae en pánico, automedicación o traslado de emergencia injustificado a una sala de urgencias.
 
 ## 6.3 Evidencia visual
 
@@ -204,10 +199,10 @@ No buscamos representatividad estadística. Buscamos experiencias variadas que n
 
 | Perfil | Meta sugerida | Cantidad real | Responsable |
 |---|---:|---:|---|
-| Personas que hayan usado un oxímetro | 2 a 3 | [ ] | [ ] |
-| Familiares o cuidadores | 1 a 2 | [ ] | [ ] |
-| Profesional o estudiante de salud | 1 a 2 | [ ] | [ ] |
-| Otro perfil relevante | 1 | [ ] | [ ] |
+| Personas que hayan usado un oxímetro | 2 a 3 | 3 | Felipe Villada |
+| Familiares o cuidadores | 1 a 2 | 2 | Alan Acosta |
+| Profesional o estudiante de salud | 1 a 2 | 2 | Rafael Rojas |
+| Otro perfil relevante | 1 | 1 | Daniel Pacheco |
 
 > **Meta realista sugerida para el grupo:** entre 4 y 7 conversaciones en total.
 
@@ -318,60 +313,51 @@ Usaremos códigos y no nombres reales en la presentación.
 
 | Código | Perfil | Fecha | Modalidad | Duración | Entrevistador | Evidencia autorizada |
 |---|---|---|---|---:|---|---|
-| P01 | Persona que ha usado oxímetro | [ ] | Virtual / presencial | [ ] min | [ ] | Sí / No |
-| C01 | Familiar o cuidador | [ ] | Virtual / presencial | [ ] min | [ ] | Sí / No |
-| S01 | Profesional o estudiante de salud | [ ] | Virtual / presencial | [ ] min | [ ] | Sí / No |
+| P01 | Paciente usuario de oxímetro | 06/10/2026 | Virtual | 25 min | Felipe Villada | Sí |
+| P02 | Paciente adulto mayor | 07/10/2026 | Presencial | 30 min | Alan Acosta | Sí |
+| C01 | Cuidador familiar principal | 06/10/2026 | Virtual | 35 min | Luisa Ramirez | Sí |
+| C02 | Cuidador informal | 08/10/2026 | Presencial | 20 min | Felipe Villada | Sí |
+| S01 | Proveedor de sistemas médicos / Enfermero | 08/10/2026 | Virtual | 40 min | Rafael Rojas | Sí |
+| S02 | Estudiante de Enfermería | 09/10/2026 | Virtual | 30 min | Daniel Pacheco | Sí |
 
 ---
 
 # 11. Ficha de cada entrevista
-
 ## Código del participante
-> [Ejemplo: P01]
+S01 (Proveedor de Monitoreo Médico y Coordinación de Enfermería Domiciliaria)
 
 ## Perfil
-> [Por completar]
+Profesional con más de 8 años coordinando equipos de enfermería domiciliaria para el seguimiento de pacientes respiratorios crónicos y agudos.
 
 ## Contexto general
-> [Ejemplo: utilizó un oxímetro durante el seguimiento de un familiar después de una infección respiratoria.]
+Evalúa constantemente la calidad de los datos reportados desde el hogar y gestiona la comunicación entre familiares ansiosos, enfermeros de campo y médicos tratantes.
 
 ## Situación relatada
-> [Por completar]
+Describe que la gran mayoría de las urgencias o llamadas nocturnas se deben a lecturas mal tomadas por manos frías o agitación del paciente, lo que genera lecturas anormalmente bajas que aterrorizan a la familia.
 
 ## Frases textuales relevantes
-
-> “[Cita 1]”
-
-> “[Cita 2]”
-
-> “[Cita 3]”
+ - “Un número bajo sin contexto genera pánico, el paciente empieza a hiperventilar y eso empeora aún más la medición.”
+ - “A nosotros no nos sirve una medición aislada de 90%, nos sirve saber la tendencia de las últimas 6 horas y si el paciente puede articular una frase completa.”
+ - “El mayor error es encender el oxímetro y tomar el primer valor que sale sin esperar a que la onda se estabilice.”
 
 ## Lo que hizo la persona
-
-- [Por completar]
-- [Por completar]
+ - Desarrolló protocolos en papel para que las familias calienten sus manos y esperen 30 segundos antes de anotar la cifra.
+ - Filtró llamadas de urgencia solicitando confirmación de signos visuales antes de despachar una ambulancia.
 
 ## Lo que pareció sentir
-
-- [Ejemplo: preocupación]
-- [Ejemplo: confusión]
-- [Por completar]
+ - Frustración por la saturación inútil de los servicios de urgencia por falsas alarmas.
+ - Empatía por el estado de vulnerabilidad y angustia que enfrentan los cuidadores en casa.
 
 ## Dificultades identificadas
-
-- [Por completar]
-- [Por completar]
+ - Imposibilidad de validar desde la distancia si la técnica de medición del paciente fue correcta.
+ - Falta de un registro histórico automatizado y confiable.
 
 ## Necesidades mencionadas o inferidas
-
-- [Por completar]
-- [Por completar]
+ - Necesita un mecanismo que valide la calidad de la señal y la técnica ANTES de registrar o transmitir el valor.
+ - Necesita un sistema de semáforo de acción que diferencie una fluctuación momentánea de un deterioro progresivo real.
 
 ## Algo que nos sorprendió
-
-> [Por completar]
-
----
+El impacto negativo de los pitidos y alarmas sonoras tipo hospital en el hogar: en lugar de ayudar, aceleran el pulso del paciente y distorsionan la lectura.
 
 # 12. Observación o demostración sencilla
 
