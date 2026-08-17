@@ -231,6 +231,12 @@ Cada operación debería conservar suficiente trazabilidad para reconstruir:
 - qué controles estaban activos;
 - y qué ocurrió posteriormente.
 
+**La brecha de responsabilidad en sistemas autónomos:
+
+Complementando lo anterior, Goetze (2022) advierte sobre la existencia de una brecha de responsabilidad asociada a los sistemas autónomos. Cuando una decisión es influenciada significativamente por un algoritmo, puede resultar difícil determinar quién debe responder si ocurre un daño: el desarrollador, el fabricante, el operador, el comandante o la institución que autorizó el uso del sistema.
+
+En el contexto militar, esta situación es especialmente problemática porque las decisiones pueden involucrar afectaciones graves a personas civiles o combatientes. Por esta razón, la incorporación de sistemas autónomos debe acompañarse de mecanismos que permitan identificar claramente quién autorizó una acción, quién supervisó el sistema y quién tiene la responsabilidad jurídica y ética sobre sus resultados. La existencia de inteligencia artificial no debe convertirse en una excusa para diluir responsabilidades dentro de la cadena de mando.
+
 Ante un incidente grave debería existir:
 
 1. suspensión del sistema cuando exista duda razonable sobre su comportamiento;
@@ -443,6 +449,12 @@ Nuestra postura encaja bien con esa dirección:
 - riesgos para civiles;
 - ciberataques o manipulación del sistema;
 - normalización de decisiones letales cada vez más automatizadas.
+
+### 9.1 Consideración ética adicional: la brecha de responsabilidad
+
+Goetze (2022) plantea que uno de los principales desafíos éticos de los sistemas autónomos es la denominada responsibility gap. A medida que aumenta la autonomía de una máquina, puede disminuir la claridad sobre quién responde por las consecuencias de sus acciones. Esto es particularmente crítico en sistemas de armas letales autónomas, donde una decisión errónea puede tener consecuencias irreversibles.
+
+Desde esta perspectiva, el control humano significativo no solo busca supervisar la tecnología, sino también preservar una cadena clara de responsabilidad moral y jurídica. Por esta razón, consideramos que cualquier sistema militar basado en IA debe contar con registros auditables, trazabilidad de decisiones y asignación explícita de responsabilidades en todos los niveles de la cadena de mando.
 
 ---
 
